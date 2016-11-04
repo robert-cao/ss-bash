@@ -13,3 +13,16 @@ Shadowsocks流量管理脚本
 
 
 [User Manual]:    https://github.com/hellofwy/ss-bash/wiki
+
+[Modify]
+
+*  帮助信息修改以下部分：
+    修改用户流量限制(如果该端口之前已经用完流量被限制，需重启服务)：
+        ssadmin.sh clim port limit
+    修改所有用户流量限制(如果该之前有端口已经用完流量被限制，需重启服务)：
+        ssadmin.sh change_all_limit limit
+    用户流量使用量置零(如果该端口之前已经用完流量被限制，需重启服务)：
+        ssadmin.sh rused port
+    所有用户流量使用量置零(如果该之前有端口已经用完流量被限制，需重启服务)：
+        ssadmin.sh reset_all_used
+
